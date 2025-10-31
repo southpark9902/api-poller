@@ -1,0 +1,14 @@
+# Ignore local environment overrides and sensitive files
+.env.local
+.env
+
+# Ignore runtime storage (if you want to keep generated files out of VCS)
+/storage/
+
+# OS / editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Composer / vendor (if added later)
+/vendor/
