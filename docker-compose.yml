@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  api:
+    image: php:8.1-apache
+    container_name: api_poller_api
+    volumes:
+      - ./dummy-api:/var/www/html:ro
+    ports:
+      - '8080:80'
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/api/result"]
+      interval: 10s
+      retries: 5
+
+  app:
+    build: .
+    container_name: api_poller_app
+    volumes:
+      - ./:/app:rw
+    working_dir: /app
+    environment:
+      # Point the app to the internal Docker network hostname for the api service
+      - API_BASE=http://api:80/api/
+      - STORAGE_DIR=/app/storage
+      - APP_ENV=local
+    depends_on:
+      api:
+        condition: service_healthy
+    command: ["php", "/app/api-poller.php"]

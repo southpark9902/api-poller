@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 // Include the project autoloader (keeps this file small and consistent).
 // The autoloader maps simple class names to `php/request/{ClassName}.php`.
 require_once __DIR__ . '/autoload.php';
@@ -30,7 +28,7 @@ $client = new HttpClient([
 ]);
 
 
-$response = $client->get(API_BASE . 'result', [
+$response = $client->get(API_BASE . 'results', [
     'query' => ['sensor' => 'temp'],
     'headers' => ['Accept' => 'application/json'],
 ]);
