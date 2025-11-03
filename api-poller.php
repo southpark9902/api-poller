@@ -27,7 +27,7 @@ $client = new HttpClient([
     'verify' => $isLocal ? false : true,
 ]);
 
-
+// https://my-json-server.typicode.com/southpark9902/dummy-api-server/results
 $response = $client->get(API_BASE . 'results', [
     'query' => ['sensor' => 'temp'],
     'headers' => ['Accept' => 'application/json'],
