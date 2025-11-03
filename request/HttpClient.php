@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 // keep exception classes local to this file
 class HttpException extends \RuntimeException {}
 class HttpRequestException extends HttpException {}

@@ -1,0 +1,39 @@
+id,datatype,description
+pass_id,VARCHAR(100),DMS generated id for each pass
+pass_timestamp_unix,BIGINT,UNIX timestamp
+pass_direction,VARCHAR(20),Direction the train(s) are travelling into the system. Please refer to external documentation for meaning of Incoming and Outgoing for a site.
+site,VARCHAR(11),Entity id for the site (11-char DMS id)
+site_client_id,VARCHAR(100),Site client id
+train_id,VARCHAR(11),Entity id for the train
+train_client_id,VARCHAR(500),Train client id
+train_class,VARCHAR(100),Class of a vehicle/train
+train_orientation,VARCHAR(20),Orientation of the train relative to consist base (Forwards/Backwards/Unknown)
+vehicle_id,VARCHAR(11),Entity id for the vehicle
+vehicle_client_id,VARCHAR(500),Vehicle client id
+vehicle_index,INTEGER,Index/position of vehicle within the train
+component_id,VARCHAR(11),Entity id for the component
+component_index,INTEGER,Index of the component (ComponentIndex)
+component_category,VARCHAR(100),DMS valid short string format for component category
+component_client_id,VARCHAR(100),Component client id
+component_position,VARCHAR(500),DMS valid short string format for component position
+subsystem,VARCHAR(11),Entity id for the subsystem
+subsystem_client_id,VARCHAR(100),Subsystem client id
+subsystem_type,VARCHAR(500),Subsystem type string
+vehicle_side,VARCHAR(50),Entity location of the vehicle side
+system_side,VARCHAR(50),System side (where measurement was taken)
+sequence_number,INTEGER,Index of processing generator for this measurement
+measurement_timestamp_unix,BIGINT,Gets or Sets MeasurementTimestamp (OpenAPI uses string ISO or similar); this CSV stores Unix seconds when available
+stream_name,VARCHAR(20),Work package stream name
+feature_id,VARCHAR(11),Feature id
+feature_template,VARCHAR(11),Feature template id
+feature_template_name,VARCHAR(100),DMS valid short string format
+parameter_name,VARCHAR(100),Name of the parameter for this measurement.
+parameter_value,TEXT,Gets or Sets Value
+parameter_status,INTEGER,"Status of the measurement. If 0 it is ""OK"", if 1 it is ""Not Measured"", if 12 it is ""Component Missing""."
+parameter_status_description,VARCHAR(100),A human readable field for the status field.
+parameter_confidence,INTEGER,"A rating from 0 - 4 on processor confidence in the measurement. If 5, then confidence is undefined."
+parameter_confidence_description,VARCHAR(100),A human readable field for the confidence field.
+parameter_raw_values,JSON,Gets or Sets RawValues (array of raw parameter values)
+classification_type,VARCHAR(50),"Classification of result based on parameter settings at time of result import (NotMeasured, Ok, Alarm, Monitor, PartlyMeasured, Invalid, ComponentMissing)"
+classification_threshold_value,DOUBLE PRECISION,The threshold exceeded by the measurement value
+classification_comparison_operator,VARCHAR(100),DMS valid short string format (comparison operator)

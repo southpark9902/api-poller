@@ -1,6 +1,7 @@
 # Ignore local environment overrides and sensitive files
 .env.local
 .env
+.copilot
 
 # Ignore runtime storage (if you want to keep generated files out of VCS)
 /storage/
