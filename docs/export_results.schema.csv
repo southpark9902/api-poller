@@ -1,7 +1,7 @@
 id,datatype,description
 pass_id,VARCHAR(100),DMS generated id for each pass
 pass_timestamp_unix,BIGINT,UNIX timestamp
-pass_direction,VARCHAR(20),Direction the train(s) are travelling into the system. Please refer to external documentation for meaning of Incoming and Outgoing for a site.
+pass_direction,VARCHAR(20),Direction the train(s) are travelling into the system. (Refer to external documentation for meaning of Incoming and Outgoing for a site)
 site,VARCHAR(11),Entity id for the site (11-char DMS id)
 site_client_id,VARCHAR(100),Site client id
 train_id,VARCHAR(11),Entity id for the train
