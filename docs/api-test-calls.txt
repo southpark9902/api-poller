@@ -1,0 +1,111 @@
+
+curl.exe -k -sS -H 'Accept: application/json' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3LV9qVnBwWVBjOFphZHBseXRfbGxBVG9jUUJabERsV0ExSEpfZGpLM19vIn0.eyJleHAiOjE3NjI3Njk3MDAsImlhdCI6MTc2Mjc2OTQwMCwiYXV0aF90aW1lIjoxNzYyNzY3NjU0LCJqdGkiOiI3MDNiZTFjMi01NTM4LTQ1MjAtOTMyYy0xMGJmNTQ4ZGMwNjYiLCJpc3MiOiJodHRwczovLzEwLjE3OC41My4zNC9hdXRoL3JlYWxtcy92ZW1zIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU2NTU3NjZkLWI0ZjUtNDQwNC1iZDViLWEzY2EzZDlhNjI1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImRtcy1sb2NhbCIsIm5vbmNlIjoiN2M4ZTc3NDEtNGE1YS00NzhiLWIzZTktN2E4MTFmZTdkZThlIiwic2Vzc2lvbl9zdGF0ZSI6ImNmYWI2ZmUxLTQxMWQtNDJkZi04YmYxLTY0MGRjZWIyMGM0ZiIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy12ZW1zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiZG1zLWxvY2FsIjp7InJvbGVzIjpbImRtc191c2VyIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiY2ZhYjZmZTEtNDExZC00MmRmLThiZjEtNjQwZGNlYjIwYzRmIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTemlsYXJkIFN6YWJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic3ppbGFyZC5zemFib0Bzb3V0aGVhc3Rlcm5yYWlsd2F5LmNvLnVrIiwiZ2l2ZW5fbmFtZSI6IlN6aWxhcmQiLCJmYW1pbHlfbmFtZSI6IlN6YWJvIiwiZW1haWwiOiJzemlsYXJkLnN6YWJvQHNvdXRoZWFzdGVybnJhaWx3YXkuY28udWsifQ.Rh6-7ewCXpNjXDtKvgNLT3WAzPrgJVEHhkCdJKTD3Dl7aA4d7lnO-yaVZMtqpkw_uKZYQTWK4aOGzE5BA1OPuhSIPuVS3stMHIeHGOwKobpAV39AoOM3RXv_IYeKts8wZDZ_if7cm0w3JLXiT8NOnqjSaamXJKTKI9C-Sf5rP3NThALogqTPNtuoR8mrG-fXi1A8GjfHcObCxDEj_AjixJWPbiZEGaQLUoI7aIThilcXXhYlEmdx8BjbgIgVneXp-g6qeqiKf-Jbq6jlUjKMwrAFqbt0-H8LhWwKVuMXEuvbhD2pqMBYm62c_FV_TGLGAjyFWuZTYeXzloJIz1ZSkA' 'https://10.178.53.34/api/subsystems/AADAWIQf0hI/parameters'
+
+$env:API_TOKEN = "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3LV9qVnBwWVBjOFphZHBseXRfbGxBVG9jUUJabERsV0ExSEpfZGpLM19vIn0.eyJleHAiOjE3NjI3Njk3MDAsImlhdCI6MTc2Mjc2OTQwMCwiYXV0aF90aW1lIjoxNzYyNzY3NjU0LCJqdGkiOiI3MDNiZTFjMi01NTM4LTQ1MjAtOTMyYy0xMGJmNTQ4ZGMwNjYiLCJpc3MiOiJodHRwczovLzEwLjE3OC41My4zNC9hdXRoL3JlYWxtcy92ZW1zIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU2NTU3NjZkLWI0ZjUtNDQwNC1iZDViLWEzY2EzZDlhNjI1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImRtcy1sb2NhbCIsIm5vbmNlIjoiN2M4ZTc3NDEtNGE1YS00NzhiLWIzZTktN2E4MTFmZTdkZThlIiwic2Vzc2lvbl9zdGF0ZSI6ImNmYWI2ZmUxLTQxMWQtNDJkZi04YmYxLTY0MGRjZWIyMGM0ZiIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy12ZW1zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiZG1zLWxvY2FsIjp7InJvbGVzIjpbImRtc191c2VyIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiY2ZhYjZmZTEtNDExZC00MmRmLThiZjEtNjQwZGNlYjIwYzRmIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTemlsYXJkIFN6YWJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic3ppbGFyZC5zemFib0Bzb3V0aGVhc3Rlcm5yYWlsd2F5LmNvLnVrIiwiZ2l2ZW5fbmFtZSI6IlN6aWxhcmQiLCJmYW1pbHlfbmFtZSI6IlN6YWJvIiwiZW1haWwiOiJzemlsYXJkLnN6YWJvQHNvdXRoZWFzdGVybnJhaWx3YXkuY28udWsifQ.Rh6-7ewCXpNjXDtKvgNLT3WAzPrgJVEHhkCdJKTD3Dl7aA4d7lnO-yaVZMtqpkw_uKZYQTWK4aOGzE5BA1OPuhSIPuVS3stMHIeHGOwKobpAV39AoOM3RXv_IYeKts8wZDZ_if7cm0w3JLXiT8NOnqjSaamXJKTKI9C-Sf5rP3NThALogqTPNtuoR8mrG-fXi1A8GjfHcObCxDEj_AjixJWPbiZEGaQLUoI7aIThilcXXhYlEmdx8BjbgIgVneXp-g6qeqiKf-Jbq6jlUjKMwrAFqbt0-H8LhWwKVuMXEuvbhD2pqMBYm62c_FV_TGLGAjyFWuZTYeXzloJIz1ZSkA"
+
+curl.exe --compressed -k -sS `
+  -H 'Accept: application/json, text/plain, */*' `
+  -H 'Accept-Language: en-US,en;q=0.9' `
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' `
+  -H 'Referer: https://10.178.53.34/' `
+  -H 'Origin: https://10.178.53.34' `
+  -H 'Connection: keep-alive' `
+  -H 'Upgrade-Insecure-Requests: 1' `
+  -H 'Sec-Fetch-Site: same-origin' `
+  -H 'Sec-Fetch-Mode: cors' `
+  -H 'Sec-Fetch-Dest: empty' `
+  -H "Authorization: Bearer $env:API_TOKEN" `
+  "https://10.178.53.34/api/subsystems/AADAWIQf0hI/parameters"
+
+  curl.exe --compressed -sS `
+  -H 'Accept: application/json, text/plain, */*' `
+  -H 'Accept-Language: en-US,en;q=0.9' `
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' `
+  -H 'Referer: https://10.178.53.34/' `
+  -H 'Origin: https://10.178.53.34' `
+  -H 'Connection: keep-alive' `
+  -H 'Upgrade-Insecure-Requests: 1' `
+  -H 'Sec-Fetch-Site: same-origin' `
+  -H 'Sec-Fetch-Mode: cors' `
+  -H 'Sec-Fetch-Dest: empty' `
+  -H "Authorization: Bearer $env:API_TOKEN" `
+  "https://10.178.53.34/api/subsystems/AADAWIQf0hI/parameters"
+
+curl.exe --compressed -k -I -H -sS `
+-H 'Accept: application/json, text/plain, */*' `
+-H 'Accept-Language: en-US,en;q=0.9' `
+-H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' `
+-H 'Referer: https://10.178.53.34/' `
+-H 'Origin: https://10.178.53.34' `
+-H 'Connection: keep-alive' `
+-H 'Upgrade-Insecure-Requests: 1' `
+-H 'Sec-Fetch-Site: same-origin' `
+-H 'Sec-Fetch-Mode: cors' `
+-H 'Sec-Fetch-Dest: empty' `
+-H "Authorization: Bearer $env:API_TOKEN" `
+"https://10.178.53.34/api/subsystems/AADAWIQf0hI/parameters"
+HTTP/1.1 403 Forbidden
+Server: nginx
+Date: Mon, 10 Nov 2025 10:51:59 GMT
+Content-Type: text/html
+Connection: keep-alive
+
+
+curl.exe -k --compressed -sS -D headers.txt -o body.txt -w "HTTPSTATUS:%{http_code}\n" `
+  -H "Accept: application/json, text/plain, */*" `
+  -H "Accept-Language: en-US,en;q=0.9" `
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" `
+  -H "Referer: https://10.178.53.34/" `
+  -H "Origin: https://10.178.53.34" `
+  -H "Connection: keep-alive" `
+  -H "Authorization: Bearer $env:API_TOKEN" `
+  "https://10.178.53.34/api/subsystems/AADAWIQf0hI/parameters"
+
+# Inspect results:
+Get-Content headers.txt
+Get-Content body.txt -Raw
+
+
+
+curl.exe -k --compressed -sS -D headers.txt -o body.txt -w "HTTPSTATUS:%{http_code}\n" `
+-H "Accept: application/json, text/plain, */*" `
+-H "Accept-Language: en-US,en;q=0.9" `
+-H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" `
+-H "Referer: https://10.178.53.34/" `
+-H "Origin: https://10.178.53.34" `
+-H "Connection: keep-alive" `
+-H "Authorization: Bearer $env:API_TOKEN" `
+https://10.178.53.34/api/sites/AACAK00f0hI/trains
+
+$env:API_TOKEN = "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3LV9qVnBwWVBjOFphZHBseXRfbGxBVG9jUUJabERsV0ExSEpfZGpLM19vIn0.eyJleHAiOjE3NjI3NzExNDQsImlhdCI6MTc2Mjc3MDg0NCwiYXV0aF90aW1lIjoxNzYyNzY3NjU0LCJqdGkiOiJiY2M2MTY1Zi00YmM3LTRhMTItYTcxMC00YjQ1MDE5MzRlMzAiLCJpc3MiOiJodHRwczovLzEwLjE3OC41My4zNC9hdXRoL3JlYWxtcy92ZW1zIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU2NTU3NjZkLWI0ZjUtNDQwNC1iZDViLWEzY2EzZDlhNjI1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImRtcy1sb2NhbCIsIm5vbmNlIjoiYzhiMGRlNGQtMjNjMC00OTg2LThiOGQtNmIxOWY4ZTBiNmI1Iiwic2Vzc2lvbl9zdGF0ZSI6ImNmYWI2ZmUxLTQxMWQtNDJkZi04YmYxLTY0MGRjZWIyMGM0ZiIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy12ZW1zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiZG1zLWxvY2FsIjp7InJvbGVzIjpbImRtc191c2VyIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiY2ZhYjZmZTEtNDExZC00MmRmLThiZjEtNjQwZGNlYjIwYzRmIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTemlsYXJkIFN6YWJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic3ppbGFyZC5zemFib0Bzb3V0aGVhc3Rlcm5yYWlsd2F5LmNvLnVrIiwiZ2l2ZW5fbmFtZSI6IlN6aWxhcmQiLCJmYW1pbHlfbmFtZSI6IlN6YWJvIiwiZW1haWwiOiJzemlsYXJkLnN6YWJvQHNvdXRoZWFzdGVybnJhaWx3YXkuY28udWsifQ.AJBD1-3tWAACp61j350TAQ3qEyYamoqsa2X2BmefxFYajGVLeQt1iCGP9HfxSALodj2-HZOWiM3WOhkUUoC3beMFC5vmw075rbxvwB2sebwjJEeFOu_oQgcn3--OlbpoJsRJChZ1FQSbEHFkSoG0aHdzy2dlvotJ5qcimjHJ9v0aMOR0Hk1JbyhggFR1dpEW-iP4VCz89jspxWMN72soyxWWsQNrwYpsWD_VZtEMxZEiIs7a2XMf52CZnrLRrWwSiamx311IL9iGz5LsU1-YBrmBfl1RBrLjk80oQ4Sxa_ohYd7IO7qG6oTrk5ckKMSLKiX20lZ_xJxnAxcyMXjSKg"
+
+# set cookie values in env vars or paste directly (be careful)
+$env:AUTH_SESSION_ID = "cfab6fe1-411d-42df-8bf1-640dceb20c4f.nxg-auth-server-33296"
+$env:KEYCLOAK_SESSION = "vems/5655766d-b4f5-4404-bd5b-a3ca3d9a6258/cfab6fe1-411d-42df-8bf1-640dceb20c4f"
+$env:KEYCLOAK_IDENTITY = "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmOGVjNmI1MC02OWNiLTQzNzEtODc4ZS0yN2U5MWIwMGYxMDYifQ.eyJleHAiOjE3NjI4MDkxMjAsImlhdCI6MTc2Mjc3MzEyMCwianRpIjoiNzAyY2I2NGItNGNlMy00YzNjLThjZDQtOTMyZWRlN2NhNDk4IiwiaXNzIjoiaHR0cHM6Ly8xMC4xNzguNTMuMzQvYXV0aC9yZWFsbXMvdmVtcyIsInN1YiI6IjU2NTU3NjZkLWI0ZjUtNDQwNC1iZDViLWEzY2EzZDlhNjI1OCIsInR5cCI6IlNlcmlhbGl6ZWQtSUQiLCJzZXNzaW9uX3N0YXRlIjoiY2ZhYjZmZTEtNDExZC00MmRmLThiZjEtNjQwZGNlYjIwYzRmIiwic2lkIjoiY2ZhYjZmZTEtNDExZC00MmRmLThiZjEtNjQwZGNlYjIwYzRmIiwic3RhdGVfY2hlY2tlciI6Ik1iMkZwa2VjWWkySzRZWUtySHJreWxjSnp0UFRSd2pzVmZlQ3hMRkxvYkUifQ.L_-81Hk4y3_btm9TEbD2r677rQqaBCcu2_UVVmaL4Ks"
+$env:cookieHeader = "AUTH_SESSION_ID=$AUTH_SESSION_ID; KEYCLOAK_SESSION=$KEYCLOAK_SESSION; KEYCLOAK_IDENTITY=$KEYCLOAK_IDENTITY"
+
+curl.exe -k --compressed -sS -D headers_cookies_only.txt -o body_cookies_only.txt -w "HTTPSTATUS:%{http_code}\n" `
+  -H "Accept: application/json, text/plain, */*" `
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" `
+  -H ("Cookie: " + $cookieHeader) `
+  "https://10.178.53.34/api/subsystems/AADAWIQf0hI/parameters"
+
+Get-Content headers_cookies_only.txt
+Get-Content body_cookies_only.txt -Raw
+
+
+
+
+
+Decode the JWT:
+
+$env:API_TOKEN = "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3LV9qVnBwWVBjOFphZHBseXRfbGxBVG9jUUJabERsV0ExSEpfZGpLM19vIn0.eyJleHAiOjE3NjI3ODM1OTEsImlhdCI6MTc2Mjc4MzI5MSwiYXV0aF90aW1lIjoxNzYyNzY3NjU0LCJqdGkiOiI2ZDEzM2JkMS1iOGFjLTRhZDctYWEyYy1jMTNiNDkwMzY2ZmMiLCJpc3MiOiJodHRwczovLzEwLjE3OC41My4zNC9hdXRoL3JlYWxtcy92ZW1zIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU2NTU3NjZkLWI0ZjUtNDQwNC1iZDViLWEzY2EzZDlhNjI1OCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImRtcy1sb2NhbCIsIm5vbmNlIjoiYmE2MjEyZjgtMzNmNC00MTI0LTgyNDAtYzM2NWRiMmIzMDZkIiwic2Vzc2lvbl9zdGF0ZSI6ImNmYWI2ZmUxLTQxMWQtNDJkZi04YmYxLTY0MGRjZWIyMGM0ZiIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy12ZW1zIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiZG1zLWxvY2FsIjp7InJvbGVzIjpbImRtc191c2VyIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwic2lkIjoiY2ZhYjZmZTEtNDExZC00MmRmLThiZjEtNjQwZGNlYjIwYzRmIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJTemlsYXJkIFN6YWJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoic3ppbGFyZC5zemFib0Bzb3V0aGVhc3Rlcm5yYWlsd2F5LmNvLnVrIiwiZ2l2ZW5fbmFtZSI6IlN6aWxhcmQiLCJmYW1pbHlfbmFtZSI6IlN6YWJvIiwiZW1haWwiOiJzemlsYXJkLnN6YWJvQHNvdXRoZWFzdGVybnJhaWx3YXkuY28udWsifQ.m62o6-kwszYVmWdXihtwZSuMBtPx8qPYTH3Wg--OOCHSqDAnY85jhR5fgu7aQp1PpF7hoBwZCHehLW2gTt5UAoHuF72E-Ie3MkmHkPME2ol5lcPvZCIFOuidTu61g7gzmvDBUnXQXvy7ir9jvEd-NbWiPAC3PVoKMmm11PNwQ8U2eMOiHcqFOByaPArHvWryvtbGN-o-FuNlC1AjoFfeR-5d1REzBsEyDEYIsUmQEwKDk7EGcUtYhoZRPlV8REiKA8ckTtPNQTyk5KNuOXMGWPiReFm5RT41l5MC_xtXi0mwVHzuED9Z0infPE4k2iTgjChiRWYtkTao85cEPB_nkA"
+
+
+$token = $env:API_TOKEN
+$parts = $token.Split('.')
+$payload = $parts[1]
+# pad base64
+if ($payload.Length % 4 -ne 0) { $payload += '=' * (4 - ($payload.Length % 4)) }
+[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($payload)) | Out-String

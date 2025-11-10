@@ -1,0 +1,238 @@
+curl.exe -k https://10.178.53.34/dms/assets/opa/authorisation.json
+
+{
+  "routes": [
+    {
+      "path": "^/overview/train-condition$",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/overview/system-health$",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/overview/pass-summary(\\?.+)*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/overview/dashboard$",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/notifications$",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/events(\\?.+)*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/settings/notification$",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/\\w+/create(\\?.+)*",
+      "roles": [
+        "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_admin"
+      ]
+    },
+    {
+      "path": "^/\\w+/details/.+",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/analysis(\\?.+)*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/organisations$",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/sites$",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/sites/sitedetails/.+",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/subsystems$",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/subsystems/subsystemdetails/.+",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/applications(\\?applicationid=.+)*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/trains(\\?trainid=.+)*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/vehicles(\\?vehicleid=.+)*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/parameters(\\?vehicleid=.+)*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/parameters/parameterdetails/.+",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "path": "^/trending(\\?.+)*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "action": ".*\\.add$",
+      "roles": [
+        "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin"
+      ]
+    },
+    {
+      "action": ".*\\.edit$",
+      "roles": [
+        "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin"
+      ]
+    },
+    {
+      "action": ".*\\.move$",
+      "roles": [
+        "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin"
+      ]
+    },
+    {
+      "action": "menu\\.item\\..*",
+      "roles": [
+        "user", "power_user", "admin",
+        "editor", "administrator",
+        "mrx_admin", "mrx_ops", "site_admin", "dms_admin", "dms_user"
+      ]
+    },
+    {
+      "action": "menu\\.item\\.iam$",
+      "roles": [
+        "admin",
+        "administrator",
+        "mrx_admin", "site_admin"
+      ]
+    },
+    {
+      "action": "system-health\\.mode\\.selectable$",
+      "roles": [
+        "admin",
+        "administrator",
+        "mrx_admin", "site_admin"
+      ]
+    },
+    {
+      "action": "system-health\\.mode\\.system",
+      "roles": [
+        "admin",
+        "administrator",
+        "mrx_admin", "site_admin"
+      ]
+    },
+    {
+      "action": "result-info\\.dev",
+      "roles": [
+        "mrx_admin", "mrx_ops"
+      ]
+    }
+  ]
+}
