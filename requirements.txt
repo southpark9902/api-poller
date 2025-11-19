@@ -1,0 +1,38 @@
+# API Poller System Requirements
+# This file lists all system-level dependencies and PHP extensions required
+
+# PHP Version Requirements
+php>=8.1
+
+# Required PHP Extensions
+ext-curl
+ext-json
+ext-mbstring
+ext-openssl
+ext-pdo
+ext-pdo-mysql
+ext-mysqli
+
+# Database Server (choose one)
+mysql-server-8.0     # MySQL 8.0 server
+# OR
+# mariadb-server      # MariaDB server (alternative to MySQL)
+
+# System Dependencies (Ubuntu/Debian package names)
+git
+curl
+unzip
+util-linux  # provides flock command
+systemd     # for service management
+mysql-client-core-8.0  # MySQL client tools
+ca-certificates        # Root CA certificates for SSL/TLS validation
+openssl               # OpenSSL tools for certificate management
+curl                  # includes SSL/TLS support for HTTPS
+
+# Optional Dependencies
+docker.io       # for containerized deployment
+docker-compose  # for multi-container setup
+
+# Development Dependencies (optional)
+php8.1-dev
+composer        # if using Composer for dependency management
