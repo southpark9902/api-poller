@@ -1,0 +1,3852 @@
+{
+  "examples": [
+    {
+      "title": "get bearer token",
+      "curl": "curl -X POST \"https://10.178.53.34/auth/realms/vems/protocol/openid-connect/token\" -H \"Content-Type: application/x-www-form-urlencoded\" -d \"grant_type=password&client_id=dms-local&username=szilard.szabo@southeasternrailway.co.uk&password=SouthParkBazd123$\" -k"
+    },
+    {
+      "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3LV9qVnBwWVBjOFphZHBseXRfbGxBVG9jUUJabERsV0ExSEpfZGpLM19vIn0.eyJleHAiOjE3NjM2NTA4OTQsImlhdCI6MTc2MzY1MDU5NCwianRpIjoiN2NjNTczYzItNDM4YS00NTc5LWFhMDctM2VhNzg2ZDA1YWM4IiwiaXNzIjoiaHR0cHM6Ly8xMC4xNzguNTMuMzQvYXV0aC9yZWFsbXMvdmVtcyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI1NjU1NzY2ZC1iNGY1LTQ0MDQtYmQ1Yi1hM2NhM2Q5YTYyNTgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkbXMtbG9jYWwiLCJzZXNzaW9uX3N0YXRlIjoiZWI4MWIwNGYtODFmNi00MGRiLThjNTMtZjg1YzMwZmRmMmVhIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLXZlbXMiXX0sInJlc291cmNlX2FjY2VzcyI6eyJkbXMtbG9jYWwiOnsicm9sZXMiOlsiZG1zX3VzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImViODFiMDRmLTgxZjYtNDBkYi04YzUzLWY4NWMzMGZkZjJlYSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiU3ppbGFyZCBTemFibyIsInByZWZlcnJlZF91c2VybmFtZSI6InN6aWxhcmQuc3phYm9Ac291dGhlYXN0ZXJucmFpbHdheS5jby51ayIsImdpdmVuX25hbWUiOiJTemlsYXJkIiwiZmFtaWx5X25hbWUiOiJTemFibyIsImVtYWlsIjoic3ppbGFyZC5zemFib0Bzb3V0aGVhc3Rlcm5yYWlsd2F5LmNvLnVrIn0.Uu6bDa97pJOFzDG3w8kk3eTd70Jay4Vzgbvh0zUWX3yT3XkLPtc7qL9Jev0QtyHchIkFUHaBQkNqbqG9433y27PFl70_zKRh0k6hSJE8K2LqRIenegh4Zo3-YMmyCmWJI9XI6tzDTOyL6iBoXbU4MaRvkQoQ0QVSVIPbOoqXNvyvyduA2hFdyFEdeCBI0kWn6z9AMJ9T3CgcKm0ogA9xyuyxz_Lkntrak0-t6CDhzkEONXragdxlVYphzs-wbkE9CnITMbIMmnSiQmkccsHcD6H8y_UKjE_QFWGjR2AIMVAmhLd4-EjmFW4YP4M2L2xMMjTrgDq5lJSdbRSU5jGwvQ",
+      "expires_in": 300,
+      "refresh_expires_in": 1800,
+      "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmOGVjNmI1MC02OWNiLTQzNzEtODc4ZS0yN2U5MWIwMGYxMDYifQ.eyJleHAiOjE3NjM2NTIzOTQsImlhdCI6MTc2MzY1MDU5NCwianRpIjoiZDgyM2FkNjEtN2NjMy00MDQ3LTlmYzAtYzJmZTliYjUwN2FlIiwiaXNzIjoiaHR0cHM6Ly8xMC4xNzguNTMuMzQvYXV0aC9yZWFsbXMvdmVtcyIsImF1ZCI6Imh0dHBzOi8vMTAuMTc4LjUzLjM0L2F1dGgvcmVhbG1zL3ZlbXMiLCJzdWIiOiI1NjU1NzY2ZC1iNGY1LTQ0MDQtYmQ1Yi1hM2NhM2Q5YTYyNTgiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiZG1zLWxvY2FsIiwic2Vzc2lvbl9zdGF0ZSI6ImViODFiMDRmLTgxZjYtNDBkYi04YzUzLWY4NWMzMGZkZjJlYSIsInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImViODFiMDRmLTgxZjYtNDBkYi04YzUzLWY4NWMzMGZkZjJlYSJ9.d4nYiAVMmGlsw1QY6Yx8ossM9hYCQHflsQOf1nDtgpk",
+      "token_type": "Bearer",
+      "not-before-policy": 0,
+      "session_state": "eb81b04f-81f6-40db-8c53-f85c30fdf2ea",
+      "scope": "profile email"
+    },
+    {
+      "title": "get bearer token 2"
+    },
+    {
+      "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ3LV9qVnBwWVBjOFphZHBseXRfbGxBVG9jUUJabERsV0ExSEpfZGpLM19vIn0.eyJleHAiOjE3NjM2NTI4MjksImlhdCI6MTc2MzY1MjUyOSwianRpIjoiNzdlMjE1ZjMtM2IwMS00NzEyLTk5YzItYTBmZDBiYTUzNzJlIiwiaXNzIjoiaHR0cHM6Ly8xMC4xNzguNTMuMzQvYXV0aC9yZWFsbXMvdmVtcyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI1NjU1NzY2ZC1iNGY1LTQ0MDQtYmQ1Yi1hM2NhM2Q5YTYyNTgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkbXMtbG9jYWwiLCJzZXNzaW9uX3N0YXRlIjoiNTA2YjIxMjMtYjQxZC00NDg2LTg1YzAtYzA2NGI5MjMzMmM5IiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLXZlbXMiXX0sInJlc291cmNlX2FjY2VzcyI6eyJkbXMtbG9jYWwiOnsicm9sZXMiOlsiZG1zX3VzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6IjUwNmIyMTIzLWI0MWQtNDQ4Ni04NWMwLWMwNjRiOTIzMzJjOSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiU3ppbGFyZCBTemFibyIsInByZWZlcnJlZF91c2VybmFtZSI6InN6aWxhcmQuc3phYm9Ac291dGhlYXN0ZXJucmFpbHdheS5jby51ayIsImdpdmVuX25hbWUiOiJTemlsYXJkIiwiZmFtaWx5X25hbWUiOiJTemFibyIsImVtYWlsIjoic3ppbGFyZC5zemFib0Bzb3V0aGVhc3Rlcm5yYWlsd2F5LmNvLnVrIn0.TxbpCOOuBIxCcHGTdSCQtylJuEnZQJ3pDrxlaJl6zKmZnc6pWTj2Yq-063TlhQeZmrG-X-Syi5hwP3QsjAIQc10lvytPNk8FYjPTwzBROkmzhgY3iVQPPXMbtm70wHW5e5d5AR2dXGG-RDu23FDGEFvC3LtzsTh_i7nGyWv6t0xS0g60gLhbIJAZVwq6ceuT2jWKeoIdAMBZPrW9QDF4IynflxWy_XwlYidv72B7l9XZhb0WgBHPpLl3lahxpuDAcTXNfGBbt5UFKmTLLeWluSY9Gb_hgjlkkiAsC2XQtI8HUQiE2NtTLB-qHqwYHfOWIm19TsxvjUPTmACYBDu9aQ",
+      "expires_in": 300,
+      "refresh_expires_in": 1800,
+      "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmOGVjNmI1MC02OWNiLTQzNzEtODc4ZS0yN2U5MWIwMGYxMDYifQ.eyJleHAiOjE3NjM2NTQzMjksImlhdCI6MTc2MzY1MjUyOSwianRpIjoiZTgyNjdjNDUtMzMwYy00MTM1LTg1OTctMTI5ZTYyZTc5YTU3IiwiaXNzIjoiaHR0cHM6Ly8xMC4xNzguNTMuMzQvYXV0aC9yZWFsbXMvdmVtcyIsImF1ZCI6Imh0dHBzOi8vMTAuMTc4LjUzLjM0L2F1dGgvcmVhbG1zL3ZlbXMiLCJzdWIiOiI1NjU1NzY2ZC1iNGY1LTQ0MDQtYmQ1Yi1hM2NhM2Q5YTYyNTgiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiZG1zLWxvY2FsIiwic2Vzc2lvbl9zdGF0ZSI6IjUwNmIyMTIzLWI0MWQtNDQ4Ni04NWMwLWMwNjRiOTIzMzJjOSIsInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6IjUwNmIyMTIzLWI0MWQtNDQ4Ni04NWMwLWMwNjRiOTIzMzJjOSJ9.GeR45a3t2uzaW-z1HtNHufWugxMIdmICdJwQkWC1cvc",
+      "token_type": "Bearer",
+      "not-before-policy": 0,
+      "session_state": "506b2123-b41d-4486-85c0-c064b92332c9",
+      "scope": "profile email"
+    },
+    {
+      "title": "get trains list",
+      "curl": "curl -H \"Accept: application/json\" -H \"Authorization: Bearer $API_TOKEN\" https://10.178.53.34/api/sites/AACAK00f0hI/trains"
+    },
+    {
+      "_links": {
+        "next": {
+          "href": "https://dms-api.local:5000/sites/AACAK00f0hI/trains?limit=100&offset=100&sort=id&total=False",
+          "templated": false,
+          "title": "Next Page",
+          "type": "GET"
+        }
+      },
+      "meta": {
+        "total": -1,
+        "result_count": 100,
+        "time_taken": 0
+      },
+      "data": [
+        {
+          "created": 1750338976594,
+          "modified": 1750338976594,
+          "id": "AAAA06JiORM",
+          "basic_info": {
+            "name": "376011",
+            "description": "376011",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376011",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338835298,
+          "modified": 1750338835298,
+          "id": "AAAA1xhiORM",
+          "basic_info": {
+            "name": "375901",
+            "description": "375901",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375901",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338923366,
+          "modified": 1750338923366,
+          "id": "AAAA2G5iORM",
+          "basic_info": {
+            "name": "377513",
+            "description": "377513",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377513",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338914194,
+          "modified": 1750338914194,
+          "id": "AAAA42ViORM",
+          "basic_info": {
+            "name": "377509",
+            "description": "377509",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377509",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338756485,
+          "modified": 1750338756485,
+          "id": "AAAA4MthORM",
+          "basic_info": {
+            "name": "375711",
+            "description": "375711",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375711",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338848686,
+          "modified": 1750338848686,
+          "id": "AAAA6iViORM",
+          "basic_info": {
+            "name": "375907",
+            "description": "375907",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375907",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338984889,
+          "modified": 1750338984889,
+          "id": "AAAA7apiORM",
+          "basic_info": {
+            "name": "376014",
+            "description": "376014",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376014",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338792382,
+          "modified": 1750338792382,
+          "id": "AAAA7u5hORM",
+          "basic_info": {
+            "name": "375812",
+            "description": "375812",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375812",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338903006,
+          "modified": 1750338903006,
+          "id": "AAAA9lpiORM",
+          "basic_info": {
+            "name": "377504",
+            "description": "377504",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377504",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338821543,
+          "modified": 1750338821543,
+          "id": "AAAAaAtiORM",
+          "basic_info": {
+            "name": "375825",
+            "description": "375825",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375825",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339120133,
+          "modified": 1750339120134,
+          "id": "AAAAAC9jORM",
+          "basic_info": {
+            "name": "395022",
+            "description": "395022",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395022",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339079598,
+          "modified": 1750339079598,
+          "id": "AAAAagdjORM",
+          "basic_info": {
+            "name": "395010",
+            "description": "395010",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395010",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339073034,
+          "modified": 1750339073034,
+          "id": "AAAAAQFjORM",
+          "basic_info": {
+            "name": "395008",
+            "description": "395008",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395008",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338948131,
+          "modified": 1750338948131,
+          "id": "AAAAB4diORM",
+          "basic_info": {
+            "name": "376001",
+            "description": "376001",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376001",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338654653,
+          "modified": 1750338654653,
+          "id": "AAAAbmhhORM",
+          "basic_info": {
+            "name": "375305",
+            "description": "375305",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375305",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339037645,
+          "modified": 1750339037645,
+          "id": "AAAAct5iORM",
+          "basic_info": {
+            "name": "376033",
+            "description": "376033",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376033",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338918881,
+          "modified": 1750338918881,
+          "id": "AAAAd2piORM",
+          "basic_info": {
+            "name": "377511",
+            "description": "377511",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377511",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339012674,
+          "modified": 1750339012674,
+          "id": "AAAAD8ZiORM",
+          "basic_info": {
+            "name": "376024",
+            "description": "376024",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376024",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338639318,
+          "modified": 1750338639318,
+          "id": "AAAAdFlhORM",
+          "basic_info": {
+            "name": "Unknown Class 375 4 Car",
+            "description": "Unknown Class 375 4 Car",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "Unknown Class 375 4 Car",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338803778,
+          "modified": 1750338803778,
+          "id": "AAAAD_phORM",
+          "basic_info": {
+            "name": "375817",
+            "description": "375817",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375817",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338787838,
+          "modified": 1750338787838,
+          "id": "AAAAfuphORM",
+          "basic_info": {
+            "name": "375810",
+            "description": "375810",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375810",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338651249,
+          "modified": 1750338651249,
+          "id": "AAAAG2VhORM",
+          "basic_info": {
+            "name": "375303",
+            "description": "375303",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375303",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338647145,
+          "modified": 1750338647145,
+          "id": "AAAAGWFhORM",
+          "basic_info": {
+            "name": "375301",
+            "description": "375301",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375301",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338672163,
+          "modified": 1750338672163,
+          "id": "AAAAh3lhORM",
+          "basic_info": {
+            "name": "375604",
+            "description": "375604",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375604",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338745473,
+          "modified": 1750338745473,
+          "id": "AAAAH8FhORM",
+          "basic_info": {
+            "name": "375706",
+            "description": "375706",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375706",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338998810,
+          "modified": 1750338998810,
+          "id": "AAAAhbhiORM",
+          "basic_info": {
+            "name": "376019",
+            "description": "376019",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376019",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338941461,
+          "modified": 1750338941461,
+          "id": "AAAAhIBiORM",
+          "basic_info": {
+            "name": "377521",
+            "description": "377521",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377521",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338738717,
+          "modified": 1750338738717,
+          "id": "AAAAhrphORM",
+          "basic_info": {
+            "name": "375703",
+            "description": "375703",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375703",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338692658,
+          "modified": 1750338692658,
+          "id": "AAAAi41hORM",
+          "basic_info": {
+            "name": "375613",
+            "description": "375613",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375613",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338805922,
+          "modified": 1750338805922,
+          "id": "AAAAJ_xhORM",
+          "basic_info": {
+            "name": "375818",
+            "description": "375818",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375818",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338871458,
+          "modified": 1750338871458,
+          "id": "AAAAJzxiORM",
+          "basic_info": {
+            "name": "375917",
+            "description": "375917",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375917",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339055786,
+          "modified": 1750339055786,
+          "id": "AAAAKfBiORM",
+          "basic_info": {
+            "name": "395003",
+            "description": "395003",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395003",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338959525,
+          "modified": 1750338959525,
+          "id": "AAAAKJJiORM",
+          "basic_info": {
+            "name": "376005",
+            "description": "376005",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376005",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339062966,
+          "modified": 1750339062966,
+          "id": "AAAALPdiORM",
+          "basic_info": {
+            "name": "395005",
+            "description": "395005",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395005",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338826434,
+          "modified": 1750338826434,
+          "id": "AAAALxBiORM",
+          "basic_info": {
+            "name": "375827",
+            "description": "375827",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375827",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338706642,
+          "modified": 1750338706642,
+          "id": "AAAAM5thORM",
+          "basic_info": {
+            "name": "375619",
+            "description": "375619",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375619",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339007085,
+          "modified": 1750339007085,
+          "id": "AAAAmsBiORM",
+          "basic_info": {
+            "name": "376022",
+            "description": "376022",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376022",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338663649,
+          "modified": 1750338663649,
+          "id": "AAAAN3FhORM",
+          "basic_info": {
+            "name": "375310",
+            "description": "375310",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375310",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338740858,
+          "modified": 1750338740858,
+          "id": "AAAAnbxhORM",
+          "basic_info": {
+            "name": "375704",
+            "description": "375704",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375704",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338884839,
+          "modified": 1750338884839,
+          "id": "AAAAOEliORM",
+          "basic_info": {
+            "name": "375923",
+            "description": "375923",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375923",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339052170,
+          "modified": 1750339052170,
+          "id": "AAAAoexiORM",
+          "basic_info": {
+            "name": "395002",
+            "description": "395002",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395002",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338909837,
+          "modified": 1750338909837,
+          "id": "AAAAomFiORM",
+          "basic_info": {
+            "name": "377507",
+            "description": "377507",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377507",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339089665,
+          "modified": 1750339089665,
+          "id": "AAAAPxFjORM",
+          "basic_info": {
+            "name": "395013",
+            "description": "395013",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395013",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338831018,
+          "modified": 1750338831018,
+          "id": "AAAAqRRiORM",
+          "basic_info": {
+            "name": "375829",
+            "description": "375829",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375829",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338878141,
+          "modified": 1750338878141,
+          "id": "AAAArkJiORM",
+          "basic_info": {
+            "name": "375920",
+            "description": "375920",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375920",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338839841,
+          "modified": 1750338839841,
+          "id": "AAAARx1iORM",
+          "basic_info": {
+            "name": "375903",
+            "description": "375903",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375903",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338801361,
+          "modified": 1750338801361,
+          "id": "AAAAs_dhORM",
+          "basic_info": {
+            "name": "375816",
+            "description": "375816",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375816",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338844366,
+          "modified": 1750338844366,
+          "id": "AAAAsiFiORM",
+          "basic_info": {
+            "name": "375905",
+            "description": "375905",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375905",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338761018,
+          "modified": 1750338761018,
+          "id": "AAAATdBhORM",
+          "basic_info": {
+            "name": "375713",
+            "description": "375713",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375713",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338772306,
+          "modified": 1750338772306,
+          "id": "AAAAU9thORM",
+          "basic_info": {
+            "name": "375803",
+            "description": "375803",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375803",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339082993,
+          "modified": 1750339082994,
+          "id": "AAAAuwpjORM",
+          "basic_info": {
+            "name": "395011",
+            "description": "395011",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395011",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339096310,
+          "modified": 1750339096310,
+          "id": "AAAAvBdjORM",
+          "basic_info": {
+            "name": "395015",
+            "description": "395015",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395015",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338833141,
+          "modified": 1750338833141,
+          "id": "AAAAvBZiORM",
+          "basic_info": {
+            "name": "375830",
+            "description": "375830",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375830",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338674421,
+          "modified": 1750338674421,
+          "id": "AAAAvHthORM",
+          "basic_info": {
+            "name": "375605",
+            "description": "375605",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375605",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338970993,
+          "modified": 1750338970993,
+          "id": "AAAAW51iORM",
+          "basic_info": {
+            "name": "376009",
+            "description": "376009",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376009",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338685725,
+          "modified": 1750338685725,
+          "id": "AAAAxoZhORM",
+          "basic_info": {
+            "name": "375610",
+            "description": "375610",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375610",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339009938,
+          "modified": 1750339009938,
+          "id": "AAAAY8NiORM",
+          "basic_info": {
+            "name": "376023",
+            "description": "376023",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376023",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338846513,
+          "modified": 1750338846513,
+          "id": "AAAAyyNiORM",
+          "basic_info": {
+            "name": "375906",
+            "description": "375906",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375906",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338812755,
+          "modified": 1750338812755,
+          "id": "AABA0wJiORM",
+          "basic_info": {
+            "name": "375821",
+            "description": "375821",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375821",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338665318,
+          "modified": 1750338665318,
+          "id": "AABA2HJhORM",
+          "basic_info": {
+            "name": "375601",
+            "description": "375601",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375601",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338779026,
+          "modified": 1750338779026,
+          "id": "AABA4-FhORM",
+          "basic_info": {
+            "name": "375806",
+            "description": "375806",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375806",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339015559,
+          "modified": 1750339015559,
+          "id": "AABA4MhiORM",
+          "basic_info": {
+            "name": "376025",
+            "description": "376025",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376025",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338726827,
+          "modified": 1750338726827,
+          "id": "AABA6a5hORM",
+          "basic_info": {
+            "name": "375628",
+            "description": "375628",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375628",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338993139,
+          "modified": 1750338993139,
+          "id": "AABA-7JiORM",
+          "basic_info": {
+            "name": "376017",
+            "description": "376017",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376017",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338936802,
+          "modified": 1750338936802,
+          "id": "AABA93tiORM",
+          "basic_info": {
+            "name": "377519",
+            "description": "377519",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377519",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339124195,
+          "modified": 1750339124195,
+          "id": "AABA9zJjORM",
+          "basic_info": {
+            "name": "395023",
+            "description": "395023",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395023",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338758675,
+          "modified": 1750338758675,
+          "id": "AABAA85hORM",
+          "basic_info": {
+            "name": "375712",
+            "description": "375712",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375712",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339137546,
+          "modified": 1750339137546,
+          "id": "AABAAUBjORM",
+          "basic_info": {
+            "name": "395027",
+            "description": "395027",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395027",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338973719,
+          "modified": 1750338973719,
+          "id": "AABABKBiORM",
+          "basic_info": {
+            "name": "376010",
+            "description": "376010",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376010",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338953662,
+          "modified": 1750338953662,
+          "id": "AABAboxiORM",
+          "basic_info": {
+            "name": "376003",
+            "description": "376003",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376003",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339130823,
+          "modified": 1750339130823,
+          "id": "AABAcDljORM",
+          "basic_info": {
+            "name": "395025",
+            "description": "395025",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395025",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338656719,
+          "modified": 1750338656719,
+          "id": "AABAcmphORM",
+          "basic_info": {
+            "name": "375306",
+            "description": "375306",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375306",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339043367,
+          "modified": 1750339043367,
+          "id": "AABACORiORM",
+          "basic_info": {
+            "name": "376035",
+            "description": "376035",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376035",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338704470,
+          "modified": 1750338704470,
+          "id": "AABAFJlhORM",
+          "basic_info": {
+            "name": "375618",
+            "description": "375618",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375618",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338649194,
+          "modified": 1750338649194,
+          "id": "AABAGWNhORM",
+          "basic_info": {
+            "name": "375302",
+            "description": "375302",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375302",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338676711,
+          "modified": 1750338676711,
+          "id": "AABA-H1hORM",
+          "basic_info": {
+            "name": "375606",
+            "description": "375606",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375606",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338641015,
+          "modified": 1750338641015,
+          "id": "AABAHFthORM",
+          "basic_info": {
+            "name": "Unknown Class 376 5 Car",
+            "description": "Unknown Class 376 5 Car",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "Unknown Class 376 5 Car",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338701875,
+          "modified": 1750338701875,
+          "id": "AABAi5ZhORM",
+          "basic_info": {
+            "name": "375617",
+            "description": "375617",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375617",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338905227,
+          "modified": 1750338905227,
+          "id": "AABAIV1iORM",
+          "basic_info": {
+            "name": "377505",
+            "description": "377505",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377505",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338850983,
+          "modified": 1750338850983,
+          "id": "AABAKChiORM",
+          "basic_info": {
+            "name": "375908",
+            "description": "375908",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375908",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338837682,
+          "modified": 1750338837682,
+          "id": "AABAKxtiORM",
+          "basic_info": {
+            "name": "375902",
+            "description": "375902",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375902",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339020995,
+          "modified": 1750339020995,
+          "id": "AABAL85iORM",
+          "basic_info": {
+            "name": "376027",
+            "description": "376027",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376027",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338875991,
+          "modified": 1750338875991,
+          "id": "AABAlEBiORM",
+          "basic_info": {
+            "name": "375919",
+            "description": "375919",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375919",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339140799,
+          "modified": 1750339140799,
+          "id": "AABALkNjORM",
+          "basic_info": {
+            "name": "395028",
+            "description": "395028",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "395028",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338683487,
+          "modified": 1750338683487,
+          "id": "AABAloRhORM",
+          "basic_info": {
+            "name": "375609",
+            "description": "375609",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375609",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338754179,
+          "modified": 1750338754179,
+          "id": "AABAn8lhORM",
+          "basic_info": {
+            "name": "375710",
+            "description": "375710",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375710",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338962651,
+          "modified": 1750338962651,
+          "id": "AABANZViORM",
+          "basic_info": {
+            "name": "376006",
+            "description": "376006",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376006",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338711179,
+          "modified": 1750338711179,
+          "id": "AABAoZ9hORM",
+          "basic_info": {
+            "name": "375621",
+            "description": "375621",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375621",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338934439,
+          "modified": 1750338934439,
+          "id": "AABAqHliORM",
+          "basic_info": {
+            "name": "377518",
+            "description": "377518",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377518",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338736406,
+          "modified": 1750338736406,
+          "id": "AABARLhhORM",
+          "basic_info": {
+            "name": "375702",
+            "description": "375702",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375702",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338873639,
+          "modified": 1750338873639,
+          "id": "AABASD5iORM",
+          "basic_info": {
+            "name": "375918",
+            "description": "375918",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375918",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338708775,
+          "modified": 1750338708775,
+          "id": "AABASJ1hORM",
+          "basic_info": {
+            "name": "375620",
+            "description": "375620",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375620",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338810591,
+          "modified": 1750338810591,
+          "id": "AABAtgBiORM",
+          "basic_info": {
+            "name": "375820",
+            "description": "375820",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375820",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338982207,
+          "modified": 1750338982207,
+          "id": "AABATqhiORM",
+          "basic_info": {
+            "name": "376013",
+            "description": "376013",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376013",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338681170,
+          "modified": 1750338681170,
+          "id": "AABAU4JhORM",
+          "basic_info": {
+            "name": "375608",
+            "description": "375608",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375608",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338661778,
+          "modified": 1750338661778,
+          "id": "AABAY29hORM",
+          "basic_info": {
+            "name": "375309",
+            "description": "375309",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375309",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338765615,
+          "modified": 1750338765615,
+          "id": "AABAytRhORM",
+          "basic_info": {
+            "name": "375715",
+            "description": "375715",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "375715",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750339029406,
+          "modified": 1750339029406,
+          "id": "AABAZtZiORM",
+          "basic_info": {
+            "name": "376030",
+            "description": "376030",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376030",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338930074,
+          "modified": 1750338930074,
+          "id": "AABAZXViORM",
+          "basic_info": {
+            "name": "377516",
+            "description": "377516",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "377516",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        },
+        {
+          "created": 1750338996040,
+          "modified": 1750338996040,
+          "id": "AACA0LViORM",
+          "basic_info": {
+            "name": "376018",
+            "description": "376018",
+            "tags": []
+          },
+          "enabled": true,
+          "acl": {
+            "Read": [
+              "administrator",
+              "editor",
+              "user",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "dms_user",
+              "dms_admin",
+              "admin@mrx.com"
+            ],
+            "Write": [
+              "administrator",
+              "editor",
+              "dms_admin",
+              "mrx_ops",
+              "site_admin",
+              "mrx_admin",
+              "admin@mrx.com"
+            ],
+            "Remove": ["administrator", "mrx_admin", "admin@mrx.com"]
+          },
+          "version": "LATEST",
+          "client_id": "376018",
+          "sites": ["AACAK00f0hI"],
+          "site_client_ids": ["SETL-site"]
+        }
+      ]
+    }
+  ]
+}
